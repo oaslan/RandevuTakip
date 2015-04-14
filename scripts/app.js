@@ -27,6 +27,7 @@ var hostAdress;
 })(window);
 
 function onLoad() {
+    cordova.exec(null, null, "SplashScreen", "hide", []);
 }
 
 function cikisButton() {
