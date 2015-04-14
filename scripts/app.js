@@ -20,13 +20,15 @@ var hostAdress;
 
 
         //ajandaRandevuDetay: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevular",
-        ajandaRandevuEkle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuEkle",
+        ajandaRandevuekle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuEkle",
         //ajandaRandevuGuncelle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuGuncelle"
     };
 
 })(window);
 
 function onLoad() {
+    $(document.body).height(window.innerHeight);
+    navigator.splashscreen.hide();
     cordova.exec(null, null, "SplashScreen", "hide", []);
 }
 

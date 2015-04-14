@@ -639,6 +639,7 @@ function AjandaRandevuCRUDData(accessToken) {
 
                 $.ajax({
                     type: "POST",
+                    url: app.endpoints.ajandaRandevuekle,
                     data: {
                         "accessToken": accessToken,
                         "BaslamaTarihiStr": basTarihi.toString(),
@@ -662,7 +663,6 @@ function AjandaRandevuCRUDData(accessToken) {
                         "Silindi": "0",
                         "RandevuTipi": scope.RandevuTipi
                     },
-                    url: app.endpoints.ajandaRandevuEkle,
                     dataType: "json",
                     beforeSend: function () { app.application.showLoading(); },
                     complete: function () { app.application.hideLoading(); },
