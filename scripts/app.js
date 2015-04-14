@@ -15,21 +15,14 @@ var hostAdress;
         arayandetaysonucekle: "http://" + hostAdress + "/Rektorluk/api/Auth/ArayanDetaySonucEkle",
         getajandarandevular: "http://" + hostAdress + "/Rektorluk/api/Auth/GetAjandaRandevular",
         ajandarandevuguncelle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuGuncelle",
-        cikis: "http://" + hostAdress + "/Rektorluk/api/Auth/Cikis",
-        
-
-
-        //ajandaRandevuDetay: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevular",
-        ajandaRandevuekle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuEkle",
-        //ajandaRandevuGuncelle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuGuncelle"
+        ajandarandevuekle: "http://" + hostAdress + "/Rektorluk/api/Auth/AjandaRandevuEkle",
+        cikis: "http://" + hostAdress + "/Rektorluk/api/Auth/Cikis"
     };
 
 })(window);
 
 function onLoad() {
     $(document.body).height(window.innerHeight);
-    navigator.splashscreen.hide();
-    cordova.exec(null, null, "SplashScreen", "hide", []);
 }
 
 function cikisButton() {

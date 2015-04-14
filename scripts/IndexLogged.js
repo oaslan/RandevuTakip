@@ -336,7 +336,6 @@ function GetRandevuKayit(accesstoken, tarih, randevutipi) {
             }
             else {
                 alert("Randevu verileri alınırken bir hata oldu. Lütfen tekrar deneyiniz.");
-                location.reload();
             }
         },
         error: function (e) {
@@ -639,7 +638,7 @@ function AjandaRandevuCRUDData(accessToken) {
 
                 $.ajax({
                     type: "POST",
-                    url: app.endpoints.ajandaRandevuekle,
+                    url: app.endpoints.ajandarandevuekle,
                     data: {
                         "accessToken": accessToken,
                         "BaslamaTarihiStr": basTarihi.toString(),
